@@ -25,7 +25,7 @@ class Aligent_NewRelicFix_Model_Observer
     public function adminhtmlControllerActionPredispatchStart($event)
     {
         if (Mage::helper('aligent_newrelicfix')->isExtensionLoaded()) {
-            newrelic_ignore_transaction();
+//            newrelic_ignore_transaction();
         }
     }
 }
